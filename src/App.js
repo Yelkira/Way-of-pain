@@ -10,7 +10,7 @@ const App = () => {
     return (<div className="app-wrapper">
         <Header/>
         <NavBar/>
-        <Profile/>hh
+        <Profile/>
 
     </div>);
 };
