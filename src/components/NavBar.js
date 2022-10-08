@@ -18,4 +18,4 @@ const NavBar = () =>{
         </div>
     </nav>);
 }
-export default NavBar;s
+export default NavBar;
