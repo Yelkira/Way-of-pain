@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = () => {
+const Profile s= () => {
     return <div className="content">
         <div>
             <img alt="pup"
