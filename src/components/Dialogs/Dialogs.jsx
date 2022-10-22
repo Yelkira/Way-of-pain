@@ -9,6 +9,7 @@ const Dialogs = (props) => {
     let sendMessage = () =>{
         let text = newMessage.current.value;
         alert(text)
+        newMessage.current.value = " ";
     }
     let dialogsElements =
         props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
