@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import store from "./redux/state";
+import store from "./redux/redux-store";
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -22,4 +22,7 @@ rerenderEntireTree(store.getState());
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-store.subscribe(rerenderEntireTree);
+store.subscribe(()=>{
+    let state = store.getState();
+    rerenderEntireTree(state);
+});
