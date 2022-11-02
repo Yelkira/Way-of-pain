@@ -1,5 +1,5 @@
 /*
-import profileReducer from "./profile-reducer";
+import usersReducers from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer";
 import sidebarReducer from "./sidebar-reducer";
 let store = {
@@ -42,7 +42,7 @@ let store = {
         this._callSubscriber = observer; //observer наблюдатель- паттерн...
     },
     dispatch(action) {//(type: "ADD-POST")
-        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.profilePage = usersReducers(this._state.profilePage, action);
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
         this._state.sideBar = sidebarReducer(this._state.sideBar, action);
         this._callSubscriber(this._state);
