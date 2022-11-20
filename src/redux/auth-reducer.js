@@ -1,5 +1,4 @@
-import {authAPI, usersAPI} from "../api/api";
-import {setUserProfile} from "./profile-reducer";
+import {authAPI} from "../api/api";
 
 const SET_USER_DATA = "SET-USER-DATA";
 
